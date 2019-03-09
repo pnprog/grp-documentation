@@ -1,4 +1,4 @@
 # grp-documentation
 Documentation for Go Review Partner
 
-+ [English](documentation_en.md)
++ [English](doc/documentation_en.md)

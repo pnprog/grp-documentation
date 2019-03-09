@@ -72,7 +72,7 @@ You will find download links from the project main page at [http://yuntingdian.c
 Download the ZIP archives, unzip it wherever you think is appropriate. Inside, you will find a **GoReviewPartner.exe** executable, just run it.
 Make sure to extract the ZIP in a folder with read/write access. The **Documents** or **Desktop** folders are fine.
 
-![](img/windows.png "GRP files after extraction")
+![](../img/img_en/windows.png "GRP files after extraction")
 
 ## Running from the sources
 Running GRP from the sources is not as complicated as it seems. There is not "compilation" needed, and in fact, this is the recommended way to run it if your are a bit comfortable with computers.
@@ -99,7 +99,7 @@ GRP is now hopefully working, you will have to set it up to use one or more bots
 # Main panel and software overview
 Here is what you will see when launching GRP:
 
-![](img/main_screen.png "Main screen view")
+![](../img/img_en/main_screen.png "Main screen view")
 
 **Run a SGF file analysis** will lead you to select a SGF file on your computer and run an analysis on this file.
 See the [Running analysis](#running-analysis) section for more information.
@@ -123,14 +123,14 @@ See the [Convert RSGF file to CSV file](#convert-rsgf-file-to-CSV-file) section 
 
 If GRP did not find any bot set in its configuration, the analysis will be disable. The main panel will then look like this:
 
-![](img/main_screen_before_settings.png "Main screen view, analysis disabled")
+![](../img/img_en/main_screen_before_settings.png "Main screen view, analysis disabled")
 
 This means you should have a look at the setting panel. See the [Settings](#settings) section for more information.
 
 # Settings
 This is what you will see when opening the **Settings** panel of GRP:
 
-![](img/settings_screen.png "Settings panel")
+![](../img/img_en/settings_screen.png "Settings panel")
 
 It is currently divided in 6 sections:
 
@@ -168,21 +168,21 @@ Below is what it looks for different values:
 
 value = 0              | value = 0.25
 :--------------------: | :-------------------:
-![](img/nsp-0.0.png)   |![](img/nsp-0.25.png)
+![](../img/img_com/nsp-0.0.png)   |![](../img/img_com/nsp-0.25.png)
 
  value = 0.5           | value = 0.75
  :-------------------: | :--------------------:
-![](img/nsp-0.5.png)   | ![](img/nsp-0.75.png) 
+![](../img/img_com/nsp-0.5.png)   | ![](../img/img_com/nsp-0.75.png) 
 
 **Real Game sequence deepness**: This parameter defines how many moves from the actual game you want to be previewed on the 2 actual game tabs during review. You can compare the results of having this value set at 5 or set at 20 on the two following pictures:
 
 Real game sequence deepness = 5:
 
-![](img/real_game_sequence_deepness-5.png)
+![](../img/img_com/real_game_sequence_deepness-5.png)
 
 Real game sequence deepness = 20:
 
-![](img/real_game_sequence_deepness-20.png)
+![](../img/img_com/real_game_sequence_deepness-20.png)
 
 
 **Maximum number of variations to display during review**: Usually a bot will propose up to 10 variations for each moves. Sometime more. You may want to limit the number of variations to display during the review, and only keep the one with the highest win rate. This is what this setting is there for. The difference with the *Maximum number of variations to record during analysis* setting is that the former controls how many variations are saved in the RSGF file, white the second controls how many variations are displayed. If a friend of you send you a big RSGF file with too many variations for you, you can reduce the number of variations displayed on your computer to focus only on the best 3 variations.
@@ -203,9 +203,9 @@ Also, the game move win rate is determined by calculating the win rate of the bo
 
 You can compare the difference on the two images below:
 
-![Letters as label](img/letters_as_label.png)
+![Letters as label](../img/img_com/letters_as_label.png)
 
-![Rates as label](img/rates_as_label.png)
+![Rates as label](../img/img_com/rates_as_label.png)
 
 **Invert mouse wheel**: The mouse wheel can be used to display the moves of the variations one by one. This option allows to inverse the mouse wheel.
 
@@ -213,7 +213,7 @@ You can compare the difference on the two images below:
 
 The following 5 sections are used to set all bots. All bots share a number of settings in common. Here they are (screen-shot taken from Ray):
 
-![Bot common settings](img/ray_settings.png)
+![Bot common settings](../img/img_en/ray_settings.png)
 
 Firstly, for each bot, GRP proposes to set 2 profiles:
 
@@ -229,11 +229,11 @@ There is also a button **Test** that will try to run the bot based on the **comm
 
 For example, when launching Leela on my computer:
 
-![GTP terminal](img/gtp_terminal.png)
+![GTP terminal](../img/img_en/gtp_terminal.png)
 
 Pressing the **Send GTP command** can be used to send a GTP command, in this case, the **genmove black** command that ask the bot to play one move as black. Here is the result (black plays at C4) on my computer:
 
-![GTP terminal](img/gtp_terminal_genmove_black.png)
+![GTP terminal](../img/img_en/gtp_terminal_genmove_black.png)
 
 Use this testing feature only to check the bot is working as usual.
 
@@ -249,7 +249,7 @@ AQ has been trained on 19x19 boards with komi at 6.5, no handicap and Japanese r
 The settings of AQ is mostly done in the **aq_config.txt** file, but different configuration files can be used for **slow profile** and **fast profile** using the **--config** parameter. For instance: **--config=aq_config_slow.txt**
 The location of the configuration file can be provided as absolute path, or path relative to the AQ executable.
 
-![](img/aq_settings.png)
+![](../img/img_en/aq_settings.png)
 
 
 ### GnuGo settings
@@ -276,7 +276,7 @@ GnuGo specific settings are:
 + **Maximum number of variations**: this is the maximal number of variations you want GnuGo to come up with for each moves. Usually, GnuGo won't have more than 10, but you may want to reduce this number to make the analysis faster.
 + **Deepness for each variation**: This is, for each variations, how deep GnuGo should keep playing. The higher this number, the longer the analysis time.
 
-![](img/gnugo_settings.png)
+![](../img/img_en/gnugo_settings.png)
 
 ### Leela settings
 Leela ([https://www.sjeng.org/leela.html](https://www.sjeng.org/leela.html)) is an strong bot, by Gian-Carlo Pascutto. Leela saw a huge increase in strength following Google/Deepming publication in Nature, and in 2016 became the strongest Go bot free to download and use.
@@ -297,7 +297,7 @@ Leela specific settings are:
 
 + **Time per move**: is how you tell Leela how many seconds maximum it should spend thinking on each move. You can leave this setting empty, or set to 0, to let Leela decides by herself.
 
-![](img/leela_settings.png)
+![](../img/img_en/leela_settings.png)
 
 ### Ray settings
 Ray ([https://github.com/zakki/ray](https://github.com/zakki/ray)) is a strong bot, by Yuki Kobayashi, distributed under BSD License. The latest versions of Ray, RLO now makes use of Leela Zero type of weights file, including the ELF weights.
@@ -312,7 +312,7 @@ Some of the parameters you may want to add are:
 
 When started for the first time, the OpenCL tuner will run to optimize your GPU running parameters, so the analysis of the first move may takes several minutes to complete.
 
-![](img/ray_settings.png)
+![](../img/img_en/ray_settings.png)
 
 ### Leela Zero settings
 
@@ -333,7 +333,7 @@ Leela Zero specific settings are:
 
 + **Time per move**: is how you tell Leela Zero how many seconds it should spend thinking on each move. You can leave this setting empty, or set to 0, to let Leela Zero decide by herself.
 
-![](img/leela_zero_settings.png)
+![](../img/img_en/leela_zero_settings.png)
 
 #Running analysis
 Running the analysis is a very straightforward process:
@@ -348,11 +348,11 @@ Selection of SGF is made from the main panel, either from a SGF on your computer
 
 If you choose to download the SGF file directly from the network, you will be asked to write or paste the URL into that pop-up, then press the **Get** button:
 
-![](img/download_sgf.png)
+![](../img/img_en/download_sgf.png)
 
 GRP will then let you select the analysis parameters:
 
-![](img/analysis_panel.png)
+![](../img/img_en/analysis_panel.png)
 
 **Bot to use for the analysis** will display the bots and profiles currently configured (if no command was provided for a bot, it won't be listed).
 
@@ -370,9 +370,9 @@ When this is done, just press **Start** button to start the analysis:
 
 The indicated remaining time is an approximation only. After the analysis of the first move is completed, GRP will propose to directly open the RSGF file in review mode:
 
-![](img/analysing.png)
+![](../img/img_en/analysing.png)
 
-![](img/analysis_completed.png)
+![](../img/img_en/analysis_completed.png)
 
 You can save the review for later if you want. The RSGF file will have been saved right next to your original SGF file, with the same name, except for the file extension.
 
@@ -382,11 +382,11 @@ If for some reason, you had to stop the analysis of one game (laptop short of ba
 
 Press the **Open a SGF file for analysis** button from the main panel, as you would do to start the analysis of a new game. But then, tell the file picker you are want to select a RSGF file instead of a SGF file:
 
-![](img/select_rsgf.png)
+![](../img/img_en/select_rsgf.png)
 
 Next select, the RSGF file that was produced before the analysis was interrupted. GRP will take note of that, and the analysis parameter panel will be a bit different:
 
-![](img/resume_analysis.png)
+![](../img/img_en/resume_analysis.png)
 
 GRP will now perform the analysis on the tree main variation only (this cannot be changed), and GRP is now asking what to do with the variations created during the first analysis run. You have two choices:
 
@@ -436,7 +436,7 @@ Some bots can also provide a score estimation. It is usually not accurate at all
 #Game review
 To review a RSGF file, open it from the main panel **Open a RSGF file for review** button. This will open a double board interface:
 
-![](img/review.png)
+![](../img/img_en/review.png)
 
 ## Interface overview
 
@@ -452,28 +452,28 @@ To review a RSGF file, open it from the main panel **Open a RSGF file for review
 
 The sizes allocated to the two tabs and the right side panel can be adjusted manually with the mouse pointer. You can totally hide the left side tabs if you don't need them and find it distracting:
 
-![](img/no_left_goban.png)
+![](../img/img_en/no_left_goban.png)
 
 ## Comments panel
 
 The right side panel is used to display informations on the current position:
 
-![](img/comments.png)
+![](../img/img_en/comments.png)
 
 ## Actual game tabs
 
 The **Actual game tabs** are there for you check out what was played in actual game.
 You will find one variation, that will be labelled "A" that indicate where the game move whas played:
 
-![](img/actual_game_tab.png)
+![](../img/img_en/actual_game_tab.png)
 
 Move you mouse pointer over that "A", and the following move will be displayed with each move numbered. If you want to follow the sequence move my move, then you can use your mouse scrolling wheel, it will display the moves one by one. Your keyboard Up and Down keys can be used as well.
 
-![](img/actual_game_variation.png)
+![](../img/img_en/actual_game_variation.png)
 
 The **Actual game** tabs can also be used to display **maps** built by the bot during the analysis. There are 3 type of maps, but not all bots support them. Use the **Maps** drow down menu to select what map to display, and press the **Show** button to display it on the goban.
 
-![](img/map_selection.png)
+![](../img/img_en/map_selection.png)
 
 + Territories: indicates what intersections on the board the bot considers to be black or white territories. This map is provided only by GnuGo.
 + Influence: indicates what intersections on the board the bot considers to be under black or white influence. This map is provided only by GnuGo and Leela.
@@ -481,17 +481,17 @@ The **Actual game** tabs can also be used to display **maps** built by the bot d
 
 Example of influence map:
 
-![](img/influence.png)
+![](../img/img_com/influence.png)
 
 Example of heatmap:
 
-![](img/heatmap.png)
+![](../img/img_com/heatmap.png)
 
 ## Analysis tabs
 
 On the **Analysis** tabs' gobans are the different variations available for this game position. The variations are the variations provided by the bot, with A being the best variation (the one the bot would choose), then B, C... second and third best variation, and so on.
 
-![](img/variations_available.png)
+![](../img/img_en/variations_available.png)
 
 If no variation is available, this could be because:
 
@@ -501,13 +501,13 @@ If no variation is available, this could be because:
 The variations may have different colors depending on the **Blue/red coloring of the variations** setting. Percentages values could be used instead of letter depending of the **Labels for variations** setting. See the [Settings](#settings) section for more information.
 You can use the **Display** drop down menu to changet the display parameters.
 
-![](img/display.png)
+![](../img/img_en/display.png)
 
 Note that if the letter/percentage color is black (inside a red or blue circle) this indicates that this move was also the game actual move.
 
 Move you mouse pointer over one of the variation, and the complete sequence of moves will be displayed with each move numbered. Additional information for that line of play will be indicated in the in the right side panel.
 
-![](img/analysis_variation.png)
+![](../img/img_en/analysis_variation.png)
 
 If you want to follow the sequence move my move, then you can use your mouse scrolling wheel, it will display the moves one by one. Your keyboard Up and Down keys can be used as well.
 
@@ -520,7 +520,7 @@ Not all bots provide all types of graphs. Leela is the one offering the most gra
 
 Those graphs consist in the successive values of win rates, from black perspective.
 
-![](img/win_rate_graph.png)
+![](../img/img_en/win_rate_graph.png)
 
 Click on one of the grey bars will bring to that position in the review panel. A yellow bar indicates the current position in the review.
 
@@ -536,7 +536,7 @@ By comparing the win rate (or Value Network win rate, Monte Carlo win rate) at o
 
 This is a graph that indicates by how much the bot believes it could have played better than the human player, or eventually by how much the human player move was better than its own move. The difference between both win rate percentage value is called **delta** and is given in [percentage points](https://en.wikipedia.org/wiki/Percentage_point) (pp).
 
-![](img/black_comparison_graph.png)
+![](../img/img_en/black_comparison_graph.png)
 
 On a delta graph:
 
@@ -559,7 +559,7 @@ On the delta graph above:
 
 Here is the corresponding white comparison graph:
 
-![](img/white_comparison_graph.png)
+![](../img/img_en/white_comparison_graph.png)
 
 One can see that:
 
@@ -568,7 +568,7 @@ One can see that:
 
 Here is the actual game position:
 
-![](img/missed_opportunity.png)
+![](../img/img_en/missed_opportunity.png)
 
 Apparently, Leela believes Black should tenuki and break into White center territory.
 
@@ -577,7 +577,7 @@ Delta graphs are a powerful tool to improve.
 ### Table
 You can replace the comments by a table by pressing the **Table** button in the top-right bar:
 
-![](img/table.png)
+![](../img/img_en/table.png)
 
 The table is designed to present the user with the maximum of information, in a very condensed way. It's the opposite of the (very verbose) comments panel.
 After you get used to reviewing your games with GRP, you will probably prefer using the table instead of the comments. Somehow, the table is more for "hardcore gamers" :)
@@ -597,11 +597,11 @@ During the game review, you might want to try out your own variations against th
 
 This will open the game position in an additionnal tab, where you are free to manually try other lines of play. The **Undo** button allows to cancel the last move played.
 
-![](img/open_move.png)
+![](../img/img_en/open_move.png)
 
 You can ask the bot to play with you along the variation, and then check its answers to your different variations.
 
-![](img/select_a_bot.png)
+![](../img/img_en/select_a_bot.png)
 
 If a bot is not in the list, it could be because:
 
@@ -612,7 +612,7 @@ If a bot is not in the list, it could be because:
 
 The different Actions to control the bots are:
 
-![](img/bot_actions.png)
+![](../img/img_en/bot_actions.png)
 
 + **Do nothing**: the default setting. The bot does not answer your move.
 + **Play one move**: the bot will play the next move based one which turn it is (Black or White)
@@ -621,7 +621,7 @@ The different Actions to control the bots are:
 + **Let the bot take both sides and play against itself**: The bot plays against itself starting from that position. The have the bot stop playing, select **Do nothing** again.
 + **Ask the bot for a quick evaluation**: The bot provides a quick evaluation on the variation you played, typically the win rate
 
-![](img/quick_evaluation.png)
+![](../img/img_en/quick_evaluation.png)
 
 While the bot is thinking for a move, the interface will be locked, the goban outline appears in red. There is no way to abort the bot while it is thinking, you have to wait for it to come up with its move.
 
@@ -631,14 +631,14 @@ In self play mode, to stop the bot, select **Do nothing** again.
 
 There is no limit to the number of new tab you can open. Tabs can be closed by pressing the **X** button in the top right of the tab:
 
-![](img/closing_tab.png)
+![](../img/img_en/closing_tab.png)
 
 ## Highlighting stones or intersection
 
 One all gobans (this is also available in Live analysis), it is possible to highlight a stone or an intesection, simply by using the mouse right click.
 The stones or intersections will "shine" for a few seconds:
 
-![](img/intersections.png)
+![](../img/img_com/intersections.png)
 
 When is this useful? This can be used when streaming to draw viewers' attention at some special stones or intersections.
 
@@ -654,7 +654,7 @@ It also has the advantage to make the result of the analysis directly available 
 
 Here is the setting panel for a live analysis, and the meaning for each settings:
 
-![](img/live_analysis_setting.png)
+![](../img/img_en/live_analysis_setting.png)
 
 **Bot to use for analysis** let you choose what bot will perform the analysis. It is probably better to select a **slow profile** bot.
 
@@ -689,7 +689,7 @@ So here are different way to use the live analysis mode:
 
 When a bot is selected as black or white, that is not the same as the bot used for analysis, or when black and white are played by different bots, then an additional option appears **No overlap thinking time**. This setting tells GRP to make sure the bots are no thinking at the same time, so that your computer processing power (CPU, GPU, RAM) does not becomes a shared resource that both bots are competing for.
 
-![](img/no_overlap_thinking_time.png)
+![](../img/img_en/no_overlap_thinking_time.png)
 
 Depending of the situation, this option will be or won't be useful:
 
@@ -706,9 +706,9 @@ Press the **Start** button to start the Live analysis. You will be asked to firs
 
 Here is the live analysis panels, the first one is Human VS Bot, the second is Bot VS Bot:
 
-![](img/live_analysis2.png)
+![](../img/img_en/live_analysis2.png)
 
-![](img/live_analysis.png)
+![](../img/img_en/live_analysis.png)
 
 **Game** section provides some basic information on the current game. If it is a Bot VS Bot game, there will be a **Pause**/**Resume** button to pause the game. If it is a Human VS Human game, or Human VS Bot game, there will be an **Undo** button available as well as a **Pass** button.
 
@@ -716,7 +716,7 @@ Here is the live analysis panels, the first one is Human VS Bot, the second is B
 
 The same way you can open new gobans during review for interactive play, new gobans can be opened during live play, by pressing the **+** tab. The features are the same:
 
-![](img/live_tab.png)
+![](../img/img_en/live_tab.png)
 
 # Convert RSGF file to SGF file
 
@@ -729,7 +729,7 @@ Converting a RSGF file to a SGF will put all those data into a SGF comments for 
 GRP offers a basic tool to convert RSGF files into CSV (**Comma Separated Values**) files. CVS files allow to record tabular data, and can be opened with Excel or LibreOffice.
 The CVS file will contains data like win rates for the game:
 
-![](img/csv.png)
+![](../img/img_en/csv.png)
 
 
 # Advanced uses
