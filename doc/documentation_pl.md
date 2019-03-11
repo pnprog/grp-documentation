@@ -1,4 +1,3 @@
-
 # Przeznaczenie
 
 Go Review Partner ("GRP") to narzędzie do analizy i przeglądania gier go (weiqi, baduk) z pomocą botów.
@@ -42,7 +41,7 @@ Podczas analizy wszystkie te informacje są zbierane i konsolidowane przez GRP, 
 
 Więcej informacji w sekcji [Przeprowadzanie analizy](#przeprowadzanie-analizy).
 
-##Przegląd pliku RSGF z wykorzystaniem interfejsu GRP
+## Przegląd pliku RSGF z wykorzystaniem interfejsu GRP
 
 Kiedy analiza zostaje ukończona, powstaje plik RSGF.
 
@@ -104,6 +103,7 @@ Na koniec, by uruchomić GRP:
 GRP powinien być teraz uruchomiony. Musisz go jeszcze skonfigurować, by mógł się kontaktować z botami. Zobacz sekcję [Ustawienia](#ustawienia).
 
 # Panel główny
+
 Po uruchomieniu GRP powinno pokazać się to okienko:
 
 ![](../img/img_pl/main_screen.png "Widok głównego okienka")
@@ -129,6 +129,7 @@ Jeśli GRP nie znalazł żadnego bota w ustawieniach, analiza będzie niedostęp
 To oznacza, że należy wprowadzić albo sprawdzić ustawienia. Zobacz sekcję [Ustawienia](#ustawienia).
 
 # Ustawienia
+
 Tak wygląda okno ustawień GRP:
 
 ![](../img/img_pl/settings_screen.png "Okienko ustawień")
@@ -252,7 +253,8 @@ Poniżej znajduje się przegląd botów dostępnych w GRP.
 Following are the descriptions and specifics options of the 5 bots available in GRP.
 
 ### AQ
-[AQ](https://github.com/ymgaq/AQ)to bot Yu Yamaguchi, rozpowszechniany na licencji MIT. AQ jest już bardzo silny i uchodzi za pierszego bota *open source*, który wygrał z profesjonalnym graczem, działając na popularnym, niespecjalistycznym sprzęcie. Co więcej AQ zdaje się być często używany przez japońskich profesjonalistów do treningów na ich serwerze go, gdzie AQ wygrywa 95% gier.
+
+[AQ](https://github.com/ymgaq/AQ) to bot Yu Yamaguchi, rozpowszechniany na licencji MIT. AQ jest już bardzo silny i uchodzi za pierszego bota *open source*, który wygrał z profesjonalnym graczem, działając na popularnym, niespecjalistycznym sprzęcie. Co więcej AQ zdaje się być często używany przez japońskich profesjonalistów do treningów na ich serwerze go, gdzie AQ wygrywa 95% gier.
 
 Obsługiwana wersja: 2.1.1 z i bez GPU.
 
@@ -263,7 +265,8 @@ Ustawienia AQ zawarte są przeważnie w pliku **aq_config.txt**, ale różne kon
 ![](../img/img_pl/aq_settings.png)
 
 ### GnuGo
-[GnuGo](https://www.gnu.org/software/gnugo/) to reprezentant wolnego oprogramowania grające w go.
+
+[GnuGo](https://www.gnu.org/software/gnugo/) to reprezentant wolnego oprogramowania grającego w go.
 
 Jego siła pozostaje daleko w tyle w stosunku do Ray'a, Leeli, Leeli Zero czy AQ. Jednak jego analiza pozostaje wartościowa dla graczy o sile około 11 kyu i słabszych.
 
@@ -289,6 +292,7 @@ Ustawienia specjalne GnuGo:
 ![](../img/img_pl/gnugo_settings.png)
 
 ### Leela
+
 [Leela](https://www.sjeng.org/leela.html) to silny bot autorstwa Gian-Carlo Pascutto. Leela znacznie się wzmocniła po publikacji przez Google/Deepmind w magazynie Nature i w 2016 stała się najmocniejszym darmowy botem.
 
 To właśnie Leela zainspirowała mnie do napisania GoReviewPartner.
@@ -310,6 +314,7 @@ Ustawienia specjalne:
 ![](../img/img_pl/leela_settings.png)
 
 ### Ray
+
 [Ray](https://github.com/zakki/ray) to silny bot. Autor: Yuki Kobayashi. Dystrubuowany na licencji BSD. Ostatnia wersja Ray'a, RLO, używa pliku wag sieci typu Leela Zero, zawierającego wagi ELF.
 
 Obsługiwana wersja: rlo-0.2.1.
@@ -613,7 +618,7 @@ Na wszystkich gobanach (również w analizie na żywo) istnieje możliwość pod
 
 Kiedy się to przydaje? Np. w czasie transmisji, by skierować uwagę widzów na konkretna miejsca. Tj. zamiast mówić - *Można teraz zagrać w R7 albo Q8.* - albo zamiast oznaczać etykietować te miejsca w edytorze - po prostu kliknij w nie, a będą bardzo zauważalne przez jakiś czas.
 
-## Rozpoczęcie rozgrywki od danego ruchu
+## Rozgrywanie wariacji z botem na dodatkowym gobanie
 
 W trakcie przeglądu można otworzyć daną pozycję na nowym gobanie, używając znaku **+** na pasku zakładek, i rozgrywać na nim alternatywne wariacje. Zobacz [Rozpoczęcie rozgrywki od danego ruchu](#rozpoczęcie-rozgrywki-od-danego-ruchu).
 
