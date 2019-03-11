@@ -69,7 +69,7 @@ To rekomendowany sposób, jeśli używasz systemu Microsoftu i nie chcesz ścią
 
 Ściągnij plik archiwum ZIP i rozpakuj, gdzie uważasz za stosowne. Wewnątrz rozpakowanego folderu znajdziesz plik wykonywalny **GoReviewPartner.exe**. Po prostu go uruchom. Upewnij się, że rozpakowujesz archiwum w lokalizacji z uprawnieniami odczytu i zapisu, np. w folderach **Dokumenty** albo **Pulpit**.
 
-![](../img/img_pl/windows.png "GRP files after extraction")
+![](../img/img_pl/windows.png "Pliki GRP po rozpakowaniu")
 
 ## Uruchomienie ze źródeł
 
@@ -108,17 +108,17 @@ Po uruchomieniu GRP powinno pokazać się to okienko:
 
 ![](../img/img_pl/main_screen.png "Widok głównego okienka")
 
-**Przeprowadź analizę pliku SGF** otwiera okieno wyboru pliku SGF do analizy. Zobacz [Przeprowadzanie analizy](przeprowadzanie-analizy).
+**Przeprowadź analizę pliku SGF** otwiera okieno wyboru pliku SGF do analizy. Zobacz [Przeprowadzanie analizy](#przeprowadzanie-analizy).
 
-**Ściągnij plik SGF do analizy**  pozwala podać adres URL pliku SGF, a następnie ściąga plik z sieci i przeprowadza analizę. To się może przydać w przypadku nowoczesnych serwerów Go jak OGS, które udostępniają bezpośrednie linki do gier. Upraszcza to procedurę ręcznego ściągania i następnie wyszukiwania pliku do analizy na dysku. Zobacz [Przeprowadzanie analizy](przeprowadzanie-analizy).
+**Ściągnij plik SGF do analizy**  pozwala podać adres URL pliku SGF, a następnie ściąga plik z sieci i przeprowadza analizę. To się może przydać w przypadku nowoczesnych serwerów Go jak OGS, które udostępniają bezpośrednie linki do gier. Upraszcza to procedurę ręcznego ściągania i następnie wyszukiwania pliku do analizy na dysku. Zobacz [Przeprowadzanie analizy](#przeprowadzanie-analizy).
 
-**Rozpocznij analizę na żywo** pozwala utworzyć zapis gry, albo zagrać przeciwko botowi, podczas gdy w tle dokonywana jest analiza. Tym sposobem skraca się czas analizy, bo gdy gra zostaje ukończona, część analizy jest już gotowa i można rozpocząć przegląd. Zobacz [Analiza na żywo](analiza-na-żywo).
+**Rozpocznij analizę na żywo** pozwala utworzyć zapis gry, albo zagrać przeciwko botowi, podczas gdy w tle dokonywana jest analiza. Tym sposobem skraca się czas analizy, bo gdy gra zostaje ukończona, część analizy jest już gotowa i można rozpocząć przegląd. Zobacz [Analiza na żywo](#analiza-na-żywo).
 
-**Otwórz plik RSGF** otwiera okno wyboru pliku RSGF z dysku i odpala jego przegląd. Zobacz [Przegląd gry](przegląd-gry).
+**Otwórz plik RSGF** otwiera okno wyboru pliku RSGF z dysku i odpala jego przegląd. Zobacz [Przegląd gry](#przegląd-gry).
 
-**Przekonwertuj plik RSGF na SGF** otwiera wybór pliku RSGF do przekonwertowania na SGF. Zobacz [Przekonwertuj plik RSGF na SGF](przekonwertuj-plik-rsgf-na-sgf).
+**Przekonwertuj plik RSGF na SGF** otwiera wybór pliku RSGF do przekonwertowania na SGF. Zobacz [Przekonwertuj plik RSGF na SGF](#przekonwertuj-plik-rsgf-na-sgf).
 
-**Przekonwertuj plik RSGF na CSV** rozpoczyna wybieranie pliku RSGF do przekonwertowania na CSV. Zobacz [Przekonwertuj plik RSGF na CSV](przekonwertuj-plik-rsgf-na-csv).
+**Przekonwertuj plik RSGF na CSV** rozpoczyna wybieranie pliku RSGF do przekonwertowania na CSV. Zobacz [Przekonwertuj plik RSGF na CSV](#przekonwertuj-plik-rsgf-na-csv).
 
 **Ustawienia** otwiera okno, w którym definiuje się boty, niektóre z ich parametrów uruchomienia, a także ustala zachowanie GRP. Jeśli uruchamiasz GRP ze źródeł (a nie z pobranej paczki), to GRP należy skonfigurować przed jakąkolwiek analizą gier czy przeglądem.
 
@@ -345,7 +345,8 @@ Ustawienia specjalne Leela Zero:
 
 ![](../img/img_pl/lz_settings.png)
 
-#Przeprowadzanie analizy
+# Przeprowadzanie analizy
+
 Running the analysis is a very straightforward process:
 Przeprowadzanie analizy to bardzo prosty proces:
 
