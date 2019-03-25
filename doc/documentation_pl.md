@@ -260,7 +260,7 @@ Obsługiwana wersja: 2.1.1 z i bez GPU.
 
 AQ był szkolony na planszach 19x19 z 6.5 komi, bez handicapu i z japońskimi regułami. AQ to zatem pierwszy kandydat do przeglądania gier o takich właściwościach, o ile Twój komputer jest wystarczająco silny.
 
-Ustawienia AQ zawarte są przeważnie w pliku **aq_config.txt**, ale różne konfiguracje mogą być stosowane w profilach przy użyciu parametru **--config**. Np. **--config=aq_config_wolny.txt**. Położenie pliku konfiguracyjnego można określić ścieżką absolutną albo względną (w stosunku do lokalizacji roboczej - `pwd`).
+Ustawienia AQ zawarte są przeważnie w pliku **aq_config.txt**, ale różne konfiguracje mogą być stosowane w profilach przy użyciu parametru **--config**. Np. **--config=aq_config_wolny.txt**. Położenie pliku konfiguracyjnego można określić ścieżką absolutną albo względną (w stosunku do lokalizacji roboczej - `pwd`, albo położenia pliku wykonalnego, jeśli jest podany ze ścieżką).
 
 ![](../img/img_pl/aq_settings.png)
 
@@ -340,7 +340,7 @@ LZ trenuje na planszy 19x19 z komi 7.5, bez handicapu i z chińskimi regułami. 
 Niektóre z parametrów:
 
 + **--mode=gtp** - ten parametr **musi** być dodany. Mówi on Leeli Zero, że ma działać w trybie GTP.
-+ **--weights** - (np: **--weights weights.txt**) - ten parametr **musi** być dodany. Wskazuje on plik wag sieci. Adres pliku podaje się względem pliku lokalizacji roboczej (`pwd`). Wygodnie jest go więc umieścić w folderze, z którego uruchamiany jest GRP. (Na systemach *nix można utworzyć link.)
++ **--weights** - (np: **--weights weights.txt**) - ten parametr **musi** być dodany. Wskazuje on plik wag sieci. Adres pliku podaje się względem pliku lokalizacji roboczej (`pwd`) albo położenia pliku wykonalnego, jeśli jest podany ze ścieżką. Wygodnie jest go więc umieścić w folderze, z którego uruchamiany jest GRP. (Na systemach *nix można utworzyć link.)
 + **--noponder** - wyłącz rozmyślanie w czasie przeciwnika: nie jest potrzebne podczas analizy
 + **--playouts 10000** - liczba symulacji - 10000 to przykład. Im więcej symulacji, tym silniejsze zachowanie bota. Ale nie jest to zależność proporcjonalna (dwa razy więcej symulacji nie powoduje, że bot jest dwukrotnie silniejszy). Jedak więcej symulacji oznacza więcej wariacji i wariacje pogłębione.
 
